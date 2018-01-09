@@ -224,7 +224,7 @@ def getTopWords(ny,sf):
 if __name__ == '__main__':
     # spanTest()
     ny = feedparser.parse('http://newyork.craigslist.org/stp/index.rss')
-    sf = feedparser.parse('http://sfbay.craigslist.org/stp/index.rss')
-    vocabList, pSF, pNY = localWords(ny, sf)
+    sy = feedparser.parse('http://sfbay.craigslist.org/stp/index.rss')
+    vocabList, pSF, pNY = localWords(ny, sy)
 
 
