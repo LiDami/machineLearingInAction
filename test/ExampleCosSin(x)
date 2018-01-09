@@ -1,0 +1,31 @@
+# -*- coding:utf8 -*-
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0,10,1000)
+y = np.sin(x)
+z = np.cos(x**2)
+plt.figure(figsize=(8,4))# 创建一个显示对象，就是那个框，对应于dpi像素
+
+plt.plot(x,y,label='$sin(xxx)$',color='red',linewidth=2)
+plt.plot(x,z,'g--',label='$cos(x^2)$')# g表示颜色
+'''   'b'     blue
+      'g'     green
+      'r'     red
+      'c'     cyan
+      'm'     magenta
+      'y'     yellow
+      'k'     black
+      'w'     white'''
+
+plt.xlabel('Time(s)')
+plt.ylabel('Volt')
+plt.title('Pyhton First Example')
+plt.ylim(-2,2)
+plt.legend()  # 用于显示图标，就是图标注解
+# print x
+plt.show()
+
+
+
+
